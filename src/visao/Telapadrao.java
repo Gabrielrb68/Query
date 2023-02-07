@@ -1,28 +1,16 @@
 package visao;
 
 import java.awt.EventQueue;
-import java.awt.Image;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
-import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
-import javax.swing.border.BevelBorder;
-import javax.swing.border.CompoundBorder;
-import javax.swing.border.LineBorder;
 import java.awt.Color;
-import javax.swing.border.SoftBevelBorder;
-import javax.swing.border.TitledBorder;
 import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.Toolkit;
 import javax.swing.border.MatteBorder;
-import javax.swing.border.EtchedBorder;
 import javax.swing.JTextField;
 
 
@@ -57,7 +45,7 @@ public class Telapadrao extends JFrame {
 		setBackground(new Color(0, 51, 51));
 		setIconImage(Toolkit.getDefaultToolkit().getImage(Telapadrao.class.getResource("/visao/logoHospital.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 863, 572);
+		setBounds(100, 100, 863, 569);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(219, 219, 219));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
