@@ -63,35 +63,35 @@ public class Telapadrao extends JFrame {
 		btnNewButton.setFont(new Font("Yu Gothic UI Semilight", Font.PLAIN, 15));
 		btnNewButton.setForeground(new Color(255, 255, 255));
 		btnNewButton.setBackground(new Color(0, 81, 81));
-		btnNewButton.setBounds(10, 89, 172, 23);
+		btnNewButton.setBounds(10, 96, 172, 23);
 		panel.add(btnNewButton);
 		
 		JButton btnMarcarConsulta = new JButton("Marcar consulta");
 		btnMarcarConsulta.setForeground(Color.WHITE);
 		btnMarcarConsulta.setFont(new Font("Yu Gothic UI Semilight", Font.PLAIN, 15));
 		btnMarcarConsulta.setBackground(new Color(0, 81, 81));
-		btnMarcarConsulta.setBounds(10, 169, 167, 23);
+		btnMarcarConsulta.setBounds(10, 168, 167, 23);
 		panel.add(btnMarcarConsulta);
 		
 		JButton btnCadastrarPaciente = new JButton("Cadastrar paciente");
 		btnCadastrarPaciente.setForeground(Color.WHITE);
 		btnCadastrarPaciente.setFont(new Font("Yu Gothic UI Semilight", Font.PLAIN, 15));
 		btnCadastrarPaciente.setBackground(new Color(0, 81, 81));
-		btnCadastrarPaciente.setBounds(10, 249, 167, 23);
+		btnCadastrarPaciente.setBounds(10, 240, 167, 23);
 		panel.add(btnCadastrarPaciente);
 		
 		JButton btnListaPaciente = new JButton("Pacientes");
 		btnListaPaciente.setForeground(Color.WHITE);
 		btnListaPaciente.setFont(new Font("Yu Gothic UI Semilight", Font.PLAIN, 15));
 		btnListaPaciente.setBackground(new Color(0, 81, 81));
-		btnListaPaciente.setBounds(10, 321, 167, 23);
+		btnListaPaciente.setBounds(10, 313, 167, 23);
 		panel.add(btnListaPaciente);
 		
 		JButton btnProfissionais = new JButton("Profissionais");
 		btnProfissionais.setForeground(Color.WHITE);
 		btnProfissionais.setFont(new Font("Yu Gothic UI Semilight", Font.PLAIN, 15));
 		btnProfissionais.setBackground(new Color(0, 81, 81));
-		btnProfissionais.setBounds(10, 395, 167, 23);
+		btnProfissionais.setBounds(10, 390, 167, 23);
 		panel.add(btnProfissionais);
 		
 		JButton btnSair = new JButton("Sair");
@@ -113,11 +113,13 @@ public class Telapadrao extends JFrame {
 		panel_1.setLayout(null);
 		
 		JLabel lblNewLabel_1 = new JLabel("Bem-vindo!");
+		lblNewLabel_1.setForeground(new Color(255, 255, 255));
 		lblNewLabel_1.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 30));
 		lblNewLabel_1.setBounds(22, 11, 169, 62);
 		panel_1.add(lblNewLabel_1);
 		
 		JPanel panel_2 = new JPanel();
+		panel_2.setBackground(new Color(240, 240, 240));
 		panel_2.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
 		panel_2.setBounds(251, 142, 230, 153);
 		contentPane.add(panel_2);
@@ -129,6 +131,7 @@ public class Telapadrao extends JFrame {
 		lblNewLabel_2.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 15));
 		
 		textField = new JTextField();
+		textField.setBackground(new Color(240, 240, 240));
 		textField.setEditable(false);
 		textField.setBounds(156, 113, 64, 20);
 		panel_2.add(textField);
@@ -147,7 +150,7 @@ public class Telapadrao extends JFrame {
 		
 		JLabel lblNewLabel_4 = new JLabel("");
 		lblNewLabel_4.setIcon(new ImageIcon(Telapadrao.class.getResource("/visao/iconMedico.png")));
-		lblNewLabel_4.setBounds(74, 11, 82, 81);
+		lblNewLabel_4.setBounds(78, 11, 82, 81);
 		panel_3.add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_2_1 = new JLabel("Médicos disponíveis:");

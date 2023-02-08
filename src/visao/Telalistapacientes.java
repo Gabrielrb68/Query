@@ -16,7 +16,7 @@ import javax.swing.ImageIcon;
 import java.awt.Color;
 import javax.swing.JTextPane;
 
-public class TelaListaPacientes extends JFrame {
+public class Telalistapacientes extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField txtPesquisarPaciente;
@@ -30,7 +30,7 @@ public class TelaListaPacientes extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					TelaListaPacientes frame = new TelaListaPacientes();
+					Telalistapacientes frame = new Telalistapacientes();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -42,11 +42,11 @@ public class TelaListaPacientes extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public TelaListaPacientes() {
+	public Telalistapacientes() {
 		setForeground(new Color(0, 85, 85));
 		setBackground(new Color(0, 85, 85));
 		setTitle("Hospital Esmeralda");
-		setIconImage(Toolkit.getDefaultToolkit().getImage(TelaListaPacientes.class.getResource("/visao/logoHospital.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Telalistapacientes.class.getResource("/visao/logoHospital.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 853, 572);
 		contentPane = new JPanel();
@@ -57,7 +57,7 @@ public class TelaListaPacientes extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(TelaListaPacientes.class.getResource("/visao/iconPesquisa.png")));
+		lblNewLabel.setIcon(new ImageIcon(Telalistapacientes.class.getResource("/visao/iconPesquisa.png")));
 		lblNewLabel.setBounds(343, 24, 47, 39);
 		contentPane.add(lblNewLabel);
 		
