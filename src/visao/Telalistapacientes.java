@@ -15,6 +15,8 @@ import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import java.awt.Color;
 import javax.swing.JTextPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 
 public class Telalistapacientes extends JFrame {
 
@@ -22,6 +24,8 @@ public class Telalistapacientes extends JFrame {
 	private JTextField txtPesquisarPaciente;
 	private JPanel panel;
 	private JPanel panel_1;
+	private JScrollPane scrollPane;
+	private JTable table;
 
 	/**
 	 * Launch the application.
@@ -62,6 +66,7 @@ public class Telalistapacientes extends JFrame {
 		contentPane.add(lblNewLabel);
 		
 		txtPesquisarPaciente = new JTextField();
+		txtPesquisarPaciente.setForeground(new Color(128, 128, 128));
 		txtPesquisarPaciente.setText("Pesquisar paciente");
 		txtPesquisarPaciente.setToolTipText("");
 		txtPesquisarPaciente.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 11));
@@ -76,9 +81,16 @@ public class Telalistapacientes extends JFrame {
 		panel.setLayout(null);
 		
 		panel_1 = new JPanel();
-		panel_1.setBackground(new Color(141, 167, 156));
+		panel_1.setBackground(new Color(64, 128, 128));
 		panel_1.setBounds(0, 0, 744, 33);
 		panel.add(panel_1);
+		
+		scrollPane = new JScrollPane();
+		scrollPane.setBounds(0, 34, 744, 385);
+		panel.add(scrollPane);
+		
+		table = new JTable();
+		scrollPane.setViewportView(table);
 		
 	}
 }

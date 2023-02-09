@@ -59,10 +59,11 @@ public class Telafichapaciente extends JFrame {
 		contentPane.setLayout(null);
 		
 		txtNomeDoPaciente = new JTextField();
+		txtNomeDoPaciente.setForeground(new Color(255, 255, 255));
 		txtNomeDoPaciente.setHorizontalAlignment(SwingConstants.CENTER);
 		txtNomeDoPaciente.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 14));
 		txtNomeDoPaciente.setEditable(false);
-		txtNomeDoPaciente.setBackground(new Color(240, 240, 240));
+		txtNomeDoPaciente.setBackground(new Color(64, 128, 128));
 		txtNomeDoPaciente.setText("Informações pessoais");
 		txtNomeDoPaciente.setBounds(10, 11, 306, 36);
 		contentPane.add(txtNomeDoPaciente);
@@ -75,13 +76,13 @@ public class Telafichapaciente extends JFrame {
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(new Color(255, 255, 255));
-		panel_1.setBounds(10, 60, 286, 191);
+		panel_1.setBounds(69, 57, 171, 191);
 		panel.add(panel_1);
 		panel_1.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon(Telafichapaciente.class.getResource("/visao/iconpeople.png")));
-		lblNewLabel.setBounds(102, 43, 72, 96);
+		lblNewLabel.setBounds(52, 44, 72, 96);
 		panel_1.add(lblNewLabel);
 		
 		textFieldNome = new JTextField();
@@ -109,7 +110,7 @@ public class Telafichapaciente extends JFrame {
 		textFieldNomeSocial = new JTextField();
 		textFieldNomeSocial.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
 		textFieldNomeSocial.setText("Alterável");
-		textFieldNomeSocial.setBounds(10, 315, 217, 20);
+		textFieldNomeSocial.setBounds(10, 313, 217, 20);
 		panel.add(textFieldNomeSocial);
 		textFieldNomeSocial.setColumns(10);
 		
@@ -124,7 +125,7 @@ public class Telafichapaciente extends JFrame {
 		textFieldSexo.setEditable(false);
 		textFieldSexo.setText("Inalterável");
 		textFieldSexo.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
-		textFieldSexo.setBounds(10, 358, 86, 20);
+		textFieldSexo.setBounds(13, 358, 86, 20);
 		panel.add(textFieldSexo);
 		textFieldSexo.setColumns(10);
 		
@@ -141,11 +142,11 @@ public class Telafichapaciente extends JFrame {
 		panel.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Nome social");
-		lblNewLabel_2.setBounds(10, 302, 86, 14);
+		lblNewLabel_2.setBounds(10, 300, 86, 14);
 		panel.add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("Sexo");
-		lblNewLabel_3.setBounds(10, 346, 46, 14);
+		lblNewLabel_3.setBounds(13, 346, 46, 14);
 		panel.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("Gênero");
@@ -167,7 +168,7 @@ public class Telafichapaciente extends JFrame {
 		JButton btnNewButton = new JButton("");
 		btnNewButton.setBackground(new Color(240, 240, 240));
 		btnNewButton.setIcon(new ImageIcon(Telafichapaciente.class.getResource("/visao/iconedicao.png")));
-		btnNewButton.setBounds(232, 314, 35, 23);
+		btnNewButton.setBounds(232, 312, 35, 23);
 		panel.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("");
