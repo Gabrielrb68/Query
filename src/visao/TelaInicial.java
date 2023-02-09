@@ -12,12 +12,13 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JButton;
 import javax.swing.JTextField;
+import javax.swing.JPasswordField;
 
 public class TelaInicial extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField txtCpf;
-	private JTextField txtSenha;
+	private JPasswordField passwordField;
 
 	/**
 	 * Launch the application.
@@ -39,8 +40,8 @@ public class TelaInicial extends JFrame {
 	 * Create the frame.
 	 */
 	public TelaInicial() {
-		setTitle("Hospital Esmeralda");
 		setIconImage(Toolkit.getDefaultToolkit().getImage(TelaInicial.class.getResource("/visao/logoHospital.png")));
+		setTitle("Hospital Esmeralda");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 863, 569);
 		contentPane = new JPanel();
@@ -63,21 +64,12 @@ public class TelaInicial extends JFrame {
 		panel.add(lblNewLabel);
 		
 		txtCpf = new JTextField();
-		txtCpf.setForeground(new Color(160, 160, 160));
+		txtCpf.setForeground(new Color(0, 0, 0));
 		txtCpf.setToolTipText("");
 		txtCpf.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 16));
-		txtCpf.setText("CPF");
-		txtCpf.setBounds(96, 212, 150, 30);
+		txtCpf.setBounds(67, 212, 203, 21);
 		panel.add(txtCpf);
 		txtCpf.setColumns(10);
-		
-		txtSenha = new JTextField();
-		txtSenha.setForeground(new Color(160, 160, 160));
-		txtSenha.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 16));
-		txtSenha.setText("Senha");
-		txtSenha.setColumns(10);
-		txtSenha.setBounds(96, 251, 150, 30);
-		panel.add(txtSenha);
 		
 		JButton btnNewButton = new JButton("Entrar");
 		btnNewButton.setForeground(new Color(255, 255, 255));
@@ -90,6 +82,24 @@ public class TelaInicial extends JFrame {
 		lblNewLabel2.setBounds(154, 380, 82, 87);
 		panel.add(lblNewLabel2);
 		lblNewLabel2.setIcon(new ImageIcon(Telapadrao.class.getResource("/visao/simbolomed.png")));
+		
+		passwordField = new JPasswordField();
+		passwordField.setBounds(67, 254, 203, 20);
+		panel.add(passwordField);
+		
+		JLabel lblNewLabel_1 = new JLabel("CPF");
+		lblNewLabel_1.setLabelFor(txtCpf);
+		lblNewLabel_1.setForeground(new Color(255, 255, 255));
+		lblNewLabel_1.setFont(new Font("Yu Gothic UI", Font.PLAIN, 12));
+		lblNewLabel_1.setBounds(67, 195, 46, 14);
+		panel.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("Senha");
+		lblNewLabel_2.setLabelFor(passwordField);
+		lblNewLabel_2.setFont(new Font("Yu Gothic UI", Font.PLAIN, 12));
+		lblNewLabel_2.setForeground(new Color(255, 255, 255));
+		lblNewLabel_2.setBounds(68, 239, 46, 14);
+		panel.add(lblNewLabel_2);
 		
 		
 		JPanel panel_1 = new JPanel();
