@@ -86,6 +86,12 @@ public class TelaInicial extends JFrame {
 		btnNewButton.setBounds(114, 311, 116, 30);
 		panel.add(btnNewButton);
 		
+		JLabel lblNewLabel2 = new JLabel("");
+		lblNewLabel2.setBounds(154, 380, 82, 87);
+		panel.add(lblNewLabel2);
+		lblNewLabel2.setIcon(new ImageIcon(Telapadrao.class.getResource("/visao/simbolomed.png")));
+		
+		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(new Color(64, 128, 128));
 		panel_1.setBounds(145, 0, 97, 530);

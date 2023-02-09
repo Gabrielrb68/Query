@@ -59,13 +59,13 @@ public class Telafichapaciente extends JFrame {
 		contentPane.setLayout(null);
 		
 		txtNomeDoPaciente = new JTextField();
+		txtNomeDoPaciente.setBounds(10, 11, 306, 36);
 		txtNomeDoPaciente.setForeground(new Color(255, 255, 255));
 		txtNomeDoPaciente.setHorizontalAlignment(SwingConstants.CENTER);
-		txtNomeDoPaciente.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 14));
+		txtNomeDoPaciente.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 14));
 		txtNomeDoPaciente.setEditable(false);
 		txtNomeDoPaciente.setBackground(new Color(64, 128, 128));
 		txtNomeDoPaciente.setText("Informações pessoais");
-		txtNomeDoPaciente.setBounds(10, 11, 306, 36);
 		contentPane.add(txtNomeDoPaciente);
 		txtNomeDoPaciente.setColumns(10);
 		
@@ -167,42 +167,32 @@ public class Telafichapaciente extends JFrame {
 		
 		JButton btnNewButton = new JButton("");
 		btnNewButton.setBackground(new Color(240, 240, 240));
-		btnNewButton.setIcon(new ImageIcon(Telafichapaciente.class.getResource("/visao/iconedicao.png")));
-		btnNewButton.setBounds(232, 312, 35, 23);
+		btnNewButton.setIcon(new ImageIcon(Telafichapaciente.class.getResource("/visao/iconCheck.png")));
+		btnNewButton.setBounds(237, 440, 59, 57);
 		panel.add(btnNewButton);
 		
-		JButton btnNewButton_1 = new JButton("");
-		btnNewButton_1.setIcon(new ImageIcon(Telafichapaciente.class.getResource("/visao/iconedicao.png")));
-		btnNewButton_1.setBackground(SystemColor.menu);
-		btnNewButton_1.setBounds(228, 357, 35, 23);
-		panel.add(btnNewButton_1);
-		
-		JButton btnNewButton_1_1 = new JButton("");
-		btnNewButton_1_1.setIcon(new ImageIcon(Telafichapaciente.class.getResource("/visao/iconedicao.png")));
-		btnNewButton_1_1.setBackground(SystemColor.menu);
-		btnNewButton_1_1.setBounds(258, 398, 35, 23);
-		panel.add(btnNewButton_1_1);
-		
-		JButton btnNewButton_1_1_1 = new JButton("");
-		btnNewButton_1_1_1.setIcon(new ImageIcon(Telafichapaciente.class.getResource("/visao/iconedicao.png")));
-		btnNewButton_1_1_1.setBackground(SystemColor.menu);
-		btnNewButton_1_1_1.setBounds(232, 438, 35, 23);
-		panel.add(btnNewButton_1_1_1);
-		
 		JLabel lblNewLabel_8 = new JLabel("");
-		lblNewLabel_8.setIcon(new ImageIcon(Telafichapaciente.class.getResource("/visao/iconmedicina.png")));
 		lblNewLabel_8.setBounds(410, -50, 369, 532);
+		lblNewLabel_8.setIcon(new ImageIcon(Telafichapaciente.class.getResource("/visao/iconmedicina.png")));
 		contentPane.add(lblNewLabel_8);
 		
 		JLabel lblNewLabel_9 = new JLabel("Registros dos pacientes");
+		lblNewLabel_9.setForeground(new Color(255, 255, 255));
+		lblNewLabel_9.setBounds(453, -9, 270, 72);
 		lblNewLabel_9.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_9.setFont(new Font("Yu Gothic UI", Font.PLAIN, 20));
-		lblNewLabel_9.setBounds(453, -9, 270, 72);
 		contentPane.add(lblNewLabel_9);
 		
 		JButton btnAcessarHistorico = new JButton("Acessar histórico médico");
-		btnAcessarHistorico.setBackground(new Color(219, 219, 219));
+		btnAcessarHistorico.setForeground(new Color(255, 255, 255));
+		btnAcessarHistorico.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 11));
 		btnAcessarHistorico.setBounds(494, 478, 184, 23);
+		btnAcessarHistorico.setBackground(new Color(64, 128, 128));
 		contentPane.add(btnAcessarHistorico);
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setBackground(new Color(64, 128, 128));
+		panel_2.setBounds(467, -9, 243, 59);
+		contentPane.add(panel_2);
 	}
 }
