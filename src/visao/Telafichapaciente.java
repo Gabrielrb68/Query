@@ -23,9 +23,9 @@ public class Telafichapaciente extends JFrame {
 	private JTextField textFieldTelefone;
 	private JTextField textFieldEmail;
 	private JTextField textFieldNomeSocial;
-	private JTextField textFieldGenero;
 	private JTextField textFieldSexo;
 	private JTextField textFieldNascimento;
+	private JTextField textFieldCEP;
 
 	/**
 	 * Launch the application.
@@ -93,17 +93,10 @@ public class Telafichapaciente extends JFrame {
 		panel.add(textFieldNome);
 		textFieldNome.setColumns(10);
 		
-		textFieldTelefone = new JTextField();
-		textFieldTelefone.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
-		textFieldTelefone.setText("Alterável");
-		textFieldTelefone.setBounds(138, 399, 115, 20);
-		panel.add(textFieldTelefone);
-		textFieldTelefone.setColumns(10);
-		
 		textFieldEmail = new JTextField();
 		textFieldEmail.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
 		textFieldEmail.setText("Alterável");
-		textFieldEmail.setBounds(13, 440, 214, 20);
+		textFieldEmail.setBounds(11, 466, 214, 20);
 		panel.add(textFieldEmail);
 		textFieldEmail.setColumns(10);
 		
@@ -114,18 +107,11 @@ public class Telafichapaciente extends JFrame {
 		panel.add(textFieldNomeSocial);
 		textFieldNomeSocial.setColumns(10);
 		
-		textFieldGenero = new JTextField();
-		textFieldGenero.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
-		textFieldGenero.setText("Alterável");
-		textFieldGenero.setBounds(138, 358, 86, 20);
-		panel.add(textFieldGenero);
-		textFieldGenero.setColumns(10);
-		
 		textFieldSexo = new JTextField();
 		textFieldSexo.setEditable(false);
 		textFieldSexo.setText("Inalterável");
 		textFieldSexo.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
-		textFieldSexo.setBounds(13, 358, 86, 20);
+		textFieldSexo.setBounds(10, 349, 86, 20);
 		panel.add(textFieldSexo);
 		textFieldSexo.setColumns(10);
 		
@@ -133,7 +119,7 @@ public class Telafichapaciente extends JFrame {
 		textFieldNascimento.setEditable(false);
 		textFieldNascimento.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
 		textFieldNascimento.setText("Inalterável");
-		textFieldNascimento.setBounds(13, 399, 86, 20);
+		textFieldNascimento.setBounds(106, 349, 86, 20);
 		panel.add(textFieldNascimento);
 		textFieldNascimento.setColumns(10);
 		
@@ -146,23 +132,15 @@ public class Telafichapaciente extends JFrame {
 		panel.add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("Sexo");
-		lblNewLabel_3.setBounds(13, 346, 46, 14);
+		lblNewLabel_3.setBounds(10, 337, 46, 14);
 		panel.add(lblNewLabel_3);
 		
-		JLabel lblNewLabel_4 = new JLabel("Gênero");
-		lblNewLabel_4.setBounds(138, 346, 46, 14);
-		panel.add(lblNewLabel_4);
-		
-		JLabel lblNewLabel_5 = new JLabel("Telefone");
-		lblNewLabel_5.setBounds(137, 385, 90, 14);
-		panel.add(lblNewLabel_5);
-		
 		JLabel lblNewLabel_6 = new JLabel("Nascimento");
-		lblNewLabel_6.setBounds(13, 386, 115, 14);
+		lblNewLabel_6.setBounds(106, 336, 115, 14);
 		panel.add(lblNewLabel_6);
 		
 		JLabel lblNewLabel_7 = new JLabel("E-mail");
-		lblNewLabel_7.setBounds(14, 425, 46, 14);
+		lblNewLabel_7.setBounds(12, 451, 46, 14);
 		panel.add(lblNewLabel_7);
 		
 		JButton btnNewButton = new JButton("");
@@ -170,6 +148,28 @@ public class Telafichapaciente extends JFrame {
 		btnNewButton.setIcon(new ImageIcon(Telafichapaciente.class.getResource("/visao/iconCheck.png")));
 		btnNewButton.setBounds(237, 440, 59, 57);
 		panel.add(btnNewButton);
+		
+		textFieldCEP = new JTextField();
+		textFieldCEP.setText("Alterável");
+		textFieldCEP.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
+		textFieldCEP.setColumns(10);
+		textFieldCEP.setBounds(9, 425, 214, 20);
+		panel.add(textFieldCEP);
+		
+		JLabel lblNewLabel_5_1 = new JLabel("CEP");
+		lblNewLabel_5_1.setBounds(11, 410, 90, 14);
+		panel.add(lblNewLabel_5_1);
+		
+		textFieldTelefone = new JTextField();
+		textFieldTelefone.setBounds(11, 386, 115, 20);
+		panel.add(textFieldTelefone);
+		textFieldTelefone.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
+		textFieldTelefone.setText("Alterável");
+		textFieldTelefone.setColumns(10);
+		
+		JLabel lblNewLabel_5 = new JLabel("Telefone");
+		lblNewLabel_5.setBounds(10, 372, 90, 14);
+		panel.add(lblNewLabel_5);
 		
 		JLabel lblNewLabel_8 = new JLabel("");
 		lblNewLabel_8.setBounds(410, -50, 369, 532);
