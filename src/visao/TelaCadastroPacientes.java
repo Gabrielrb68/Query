@@ -185,11 +185,11 @@ public class TelaCadastroPacientes extends JFrame {
 		panel_2.setBounds(125, 0, 243, 59);
 		contentPane.add(panel_2);
 		
-		JButton btnNewButton_1 = new JButton("Voltar");
-		btnNewButton_1.setForeground(new Color(255, 255, 255));
-		btnNewButton_1.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 11));
-		btnNewButton_1.setBackground(new Color(64, 128, 128));
-		btnNewButton_1.setBounds(21, 479, 119, 40);
-		contentPane.add(btnNewButton_1);
+		JButton btnVoltar = new JButton("Voltar");
+		btnVoltar.setForeground(new Color(255, 255, 255));
+		btnVoltar.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 11));
+		btnVoltar.setBackground(new Color(64, 128, 128));
+		btnVoltar.setBounds(21, 479, 119, 40);
+		contentPane.add(btnVoltar);
 	}
 }

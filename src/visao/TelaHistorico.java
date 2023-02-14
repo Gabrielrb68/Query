@@ -25,7 +25,7 @@ public class TelaHistorico extends JFrame {
 	private JLabel lblNewLabel_1;
 	private JLabel lblNewLabel_2;
 	private JLabel lblNewLabel_3;
-	private JButton btnNewButton;
+	private JButton btnVoltar;
 
 	/**
 	 * Launch the application.
@@ -95,12 +95,12 @@ public class TelaHistorico extends JFrame {
 		lblNewLabel_2.setBounds(696, 79, 87, 35);
 		contentPane.add(lblNewLabel_2);
 		
-		btnNewButton = new JButton("Voltar");
-		btnNewButton.setForeground(Color.WHITE);
-		btnNewButton.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 11));
-		btnNewButton.setBackground(new Color(64, 128, 128));
-		btnNewButton.setBounds(677, 11, 119, 40);
-		contentPane.add(btnNewButton);
+		btnVoltar = new JButton("Voltar");
+		btnVoltar.setForeground(Color.WHITE);
+		btnVoltar.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 11));
+		btnVoltar.setBackground(new Color(64, 128, 128));
+		btnVoltar.setBounds(677, 11, 119, 40);
+		contentPane.add(btnVoltar);
 	}
 
 }

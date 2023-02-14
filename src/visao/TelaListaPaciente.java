@@ -27,7 +27,7 @@ public class TelaListaPaciente extends JFrame {
 	private JPanel panel_1;
 	private JScrollPane scrollPane;
 	private JTable table;
-	private JButton btnNewButton;
+	private JButton btnVoltar;
 
 	/**
 	 * Launch the application.
@@ -94,12 +94,12 @@ public class TelaListaPaciente extends JFrame {
 		table = new JTable();
 		scrollPane.setViewportView(table);
 		
-		btnNewButton = new JButton("Voltar");
-		btnNewButton.setForeground(Color.WHITE);
-		btnNewButton.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 11));
-		btnNewButton.setBackground(new Color(64, 128, 128));
-		btnNewButton.setBounds(676, 23, 119, 40);
-		contentPane.add(btnNewButton);
+		btnVoltar = new JButton("Voltar");
+		btnVoltar.setForeground(Color.WHITE);
+		btnVoltar.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 11));
+		btnVoltar.setBackground(new Color(64, 128, 128));
+		btnVoltar.setBounds(676, 23, 119, 40);
+		contentPane.add(btnVoltar);
 		
 	}
 }
