@@ -60,7 +60,7 @@ public class TelaFichaPaciente extends JFrame {
 		
 		JLabel lblNewLabel_8 = new JLabel("");
 		lblNewLabel_8.setBounds(410, -50, 369, 532);
-		lblNewLabel_8.setIcon(new ImageIcon(TelaFichaPaciente.class.getResource("/img/iconmedmaior.png")));
+		lblNewLabel_8.setIcon(new ImageIcon(TelaFichaPaciente.class.getResource("/img/iconmedicina.png")));
 		contentPane.add(lblNewLabel_8);
 		
 		txtNomeDoPaciente = new JTextField();
@@ -194,5 +194,12 @@ public class TelaFichaPaciente extends JFrame {
 		panel_2.setBackground(new Color(64, 128, 128));
 		panel_2.setBounds(467, -9, 243, 59);
 		contentPane.add(panel_2);
+		
+		JButton btnNewButton_1 = new JButton("Voltar");
+		btnNewButton_1.setForeground(Color.WHITE);
+		btnNewButton_1.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 11));
+		btnNewButton_1.setBackground(new Color(64, 128, 128));
+		btnNewButton_1.setBounds(703, 479, 119, 40);
+		contentPane.add(btnNewButton_1);
 	}
 }

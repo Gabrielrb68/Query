@@ -170,7 +170,26 @@ public class TelaCadastroPacientes extends JFrame {
 		
 		JLabel lblNewLabel_8 = new JLabel("");
 		lblNewLabel_8.setIcon(new ImageIcon(TelaCadastroPacientes.class.getResource("/img/iconmedicina.png")));
-		lblNewLabel_8.setBounds(50, -50, 369, 532);
+		lblNewLabel_8.setBounds(81, -64, 369, 532);
 		contentPane.add(lblNewLabel_8);
+		
+		JLabel lblNewLabel_9 = new JLabel("Registros dos pacientes");
+		lblNewLabel_9.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_9.setForeground(Color.WHITE);
+		lblNewLabel_9.setFont(new Font("Yu Gothic UI", Font.PLAIN, 20));
+		lblNewLabel_9.setBounds(112, 0, 270, 72);
+		contentPane.add(lblNewLabel_9);
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setBackground(new Color(64, 128, 128));
+		panel_2.setBounds(125, 0, 243, 59);
+		contentPane.add(panel_2);
+		
+		JButton btnNewButton_1 = new JButton("Voltar");
+		btnNewButton_1.setForeground(new Color(255, 255, 255));
+		btnNewButton_1.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 11));
+		btnNewButton_1.setBackground(new Color(64, 128, 128));
+		btnNewButton_1.setBounds(21, 479, 119, 40);
+		contentPane.add(btnNewButton_1);
 	}
 }

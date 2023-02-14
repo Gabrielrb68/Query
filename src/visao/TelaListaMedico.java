@@ -13,6 +13,7 @@ import javax.swing.ImageIcon;
 import java.awt.Font;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.JButton;
 
 public class TelaListaMedico extends JFrame {
 
@@ -80,5 +81,12 @@ public class TelaListaMedico extends JFrame {
 		txtPesquisarProfissional.setBounds(50, 22, 344, 39);
 		contentPane.add(txtPesquisarProfissional);
 		txtPesquisarProfissional.setColumns(10);
+		
+		JButton btnNewButton_1 = new JButton("Voltar");
+		btnNewButton_1.setForeground(Color.WHITE);
+		btnNewButton_1.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 11));
+		btnNewButton_1.setBackground(new Color(64, 128, 128));
+		btnNewButton_1.setBounds(684, 11, 119, 40);
+		contentPane.add(btnNewButton_1);
 	}
 }
