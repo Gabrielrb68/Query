@@ -19,13 +19,13 @@ public class TelaFichaPaciente extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField txtNomeDoPaciente;
-	private JTextField textFieldNome;
-	private JTextField textFieldTelefone;
-	private JTextField textFieldEmail;
-	private JTextField textFieldNomeSocial;
-	private JTextField textFieldSexo;
-	private JTextField textFieldNascimento;
-	private JTextField textFieldCEP;
+	private JTextField txtNome;
+	private JTextField txtTelefone;
+	private JTextField txtEmail;
+	private JTextField txtNomeSocial;
+	private JTextField txtSexo;
+	private JTextField txtNascimento;
+	private JTextField txtCEP;
 
 	/**
 	 * Launch the application.
@@ -85,43 +85,43 @@ public class TelaFichaPaciente extends JFrame {
 		lblNewLabel.setBounds(52, 44, 72, 96);
 		panel_1.add(lblNewLabel);
 		
-		textFieldNome = new JTextField();
-		textFieldNome.setEditable(false);
-		textFieldNome.setText("Inalterável");
-		textFieldNome.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
-		textFieldNome.setBounds(10, 274, 217, 20);
-		panel.add(textFieldNome);
-		textFieldNome.setColumns(10);
+		txtNome = new JTextField();
+		txtNome.setEditable(false);
+		txtNome.setText("Inalterável");
+		txtNome.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
+		txtNome.setBounds(10, 274, 217, 20);
+		panel.add(txtNome);
+		txtNome.setColumns(10);
 		
-		textFieldEmail = new JTextField();
-		textFieldEmail.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
-		textFieldEmail.setText("Alterável");
-		textFieldEmail.setBounds(11, 466, 214, 20);
-		panel.add(textFieldEmail);
-		textFieldEmail.setColumns(10);
+		txtEmail = new JTextField();
+		txtEmail.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
+		txtEmail.setText("Alterável");
+		txtEmail.setBounds(11, 466, 214, 20);
+		panel.add(txtEmail);
+		txtEmail.setColumns(10);
 		
-		textFieldNomeSocial = new JTextField();
-		textFieldNomeSocial.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
-		textFieldNomeSocial.setText("Alterável");
-		textFieldNomeSocial.setBounds(10, 313, 217, 20);
-		panel.add(textFieldNomeSocial);
-		textFieldNomeSocial.setColumns(10);
+		txtNomeSocial = new JTextField();
+		txtNomeSocial.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
+		txtNomeSocial.setText("Alterável");
+		txtNomeSocial.setBounds(10, 313, 217, 20);
+		panel.add(txtNomeSocial);
+		txtNomeSocial.setColumns(10);
 		
-		textFieldSexo = new JTextField();
-		textFieldSexo.setEditable(false);
-		textFieldSexo.setText("Inalterável");
-		textFieldSexo.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
-		textFieldSexo.setBounds(10, 349, 86, 20);
-		panel.add(textFieldSexo);
-		textFieldSexo.setColumns(10);
+		txtSexo = new JTextField();
+		txtSexo.setEditable(false);
+		txtSexo.setText("Inalterável");
+		txtSexo.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
+		txtSexo.setBounds(10, 349, 86, 20);
+		panel.add(txtSexo);
+		txtSexo.setColumns(10);
 		
-		textFieldNascimento = new JTextField();
-		textFieldNascimento.setEditable(false);
-		textFieldNascimento.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
-		textFieldNascimento.setText("Inalterável");
-		textFieldNascimento.setBounds(106, 349, 86, 20);
-		panel.add(textFieldNascimento);
-		textFieldNascimento.setColumns(10);
+		txtNascimento = new JTextField();
+		txtNascimento.setEditable(false);
+		txtNascimento.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
+		txtNascimento.setText("Inalterável");
+		txtNascimento.setBounds(106, 349, 86, 20);
+		panel.add(txtNascimento);
+		txtNascimento.setColumns(10);
 		
 		JLabel lblNewLabel_1 = new JLabel("Nome");
 		lblNewLabel_1.setBounds(10, 262, 46, 14);
@@ -149,23 +149,23 @@ public class TelaFichaPaciente extends JFrame {
 		btnNewButton.setBounds(237, 440, 59, 57);
 		panel.add(btnNewButton);
 		
-		textFieldCEP = new JTextField();
-		textFieldCEP.setText("Alterável");
-		textFieldCEP.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
-		textFieldCEP.setColumns(10);
-		textFieldCEP.setBounds(9, 425, 214, 20);
-		panel.add(textFieldCEP);
+		txtCEP = new JTextField();
+		txtCEP.setText("Alterável");
+		txtCEP.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
+		txtCEP.setColumns(10);
+		txtCEP.setBounds(9, 425, 214, 20);
+		panel.add(txtCEP);
 		
 		JLabel lblNewLabel_5_1 = new JLabel("CEP");
 		lblNewLabel_5_1.setBounds(11, 410, 90, 14);
 		panel.add(lblNewLabel_5_1);
 		
-		textFieldTelefone = new JTextField();
-		textFieldTelefone.setBounds(11, 386, 115, 20);
-		panel.add(textFieldTelefone);
-		textFieldTelefone.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
-		textFieldTelefone.setText("Alterável");
-		textFieldTelefone.setColumns(10);
+		txtTelefone = new JTextField();
+		txtTelefone.setBounds(11, 386, 115, 20);
+		panel.add(txtTelefone);
+		txtTelefone.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 12));
+		txtTelefone.setText("Alterável");
+		txtTelefone.setColumns(10);
 		
 		JLabel lblNewLabel_5 = new JLabel("Telefone");
 		lblNewLabel_5.setBounds(10, 372, 90, 14);

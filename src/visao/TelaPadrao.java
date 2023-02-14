@@ -17,8 +17,8 @@ import javax.swing.JTextField;
 public class TelaPadrao extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
+	private JTextField txtPacientesCadastradosQnt;
+	private JTextField txtMedicosDisponiveisQnt;
 
 	/**
 	 * Launch the application.
@@ -130,12 +130,12 @@ public class TelaPadrao extends JFrame {
 		panel_2.add(lblNewLabel_2);
 		lblNewLabel_2.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 15));
 		
-		textField = new JTextField();
-		textField.setBackground(new Color(240, 240, 240));
-		textField.setEditable(false);
-		textField.setBounds(156, 113, 64, 20);
-		panel_2.add(textField);
-		textField.setColumns(10);
+		txtPacientesCadastradosQnt = new JTextField();
+		txtPacientesCadastradosQnt.setBackground(new Color(240, 240, 240));
+		txtPacientesCadastradosQnt.setEditable(false);
+		txtPacientesCadastradosQnt.setBounds(156, 113, 64, 20);
+		panel_2.add(txtPacientesCadastradosQnt);
+		txtPacientesCadastradosQnt.setColumns(10);
 		
 		JLabel lblNewLabel_3 = new JLabel("");
 		lblNewLabel_3.setIcon(new ImageIcon(TelaPadrao.class.getResource("/visao/iconPaciente (4).png")));
@@ -158,11 +158,11 @@ public class TelaPadrao extends JFrame {
 		lblNewLabel_2_1.setBounds(9, 103, 137, 43);
 		panel_3.add(lblNewLabel_2_1);
 		
-		textField_1 = new JTextField();
-		textField_1.setEditable(false);
-		textField_1.setColumns(10);
-		textField_1.setBounds(142, 117, 64, 20);
-		panel_3.add(textField_1);
+		txtMedicosDisponiveisQnt = new JTextField();
+		txtMedicosDisponiveisQnt.setEditable(false);
+		txtMedicosDisponiveisQnt.setColumns(10);
+		txtMedicosDisponiveisQnt.setBounds(142, 117, 64, 20);
+		panel_3.add(txtMedicosDisponiveisQnt);
 		
 
 		
