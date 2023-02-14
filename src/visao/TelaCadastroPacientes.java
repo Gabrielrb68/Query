@@ -8,7 +8,7 @@ import javax.swing.border.EmptyBorder;
 import java.awt.Color;
 import java.awt.Toolkit;
 
-public class Telacadastropacientes extends JFrame {
+public class TelaCadastroPacientes extends JFrame {
 
 	private JPanel contentPane;
 
@@ -19,7 +19,7 @@ public class Telacadastropacientes extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Telacadastropacientes frame = new Telacadastropacientes();
+					TelaCadastroPacientes frame = new TelaCadastroPacientes();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -31,9 +31,9 @@ public class Telacadastropacientes extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Telacadastropacientes() {
+	public TelaCadastroPacientes() {
 		setTitle("Hospital Esmeralda");
-		setIconImage(Toolkit.getDefaultToolkit().getImage(Telacadastropacientes.class.getResource("/visao/logoHospital.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(TelaCadastroPacientes.class.getResource("/visao/logoHospital.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 863, 570);
 		contentPane = new JPanel();
