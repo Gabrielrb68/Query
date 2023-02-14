@@ -17,6 +17,7 @@ import java.awt.Color;
 import javax.swing.JTextPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.JButton;
 
 public class TelaListaPaciente extends JFrame {
 
@@ -26,6 +27,7 @@ public class TelaListaPaciente extends JFrame {
 	private JPanel panel_1;
 	private JScrollPane scrollPane;
 	private JTable table;
+	private JButton btnVoltar;
 
 	/**
 	 * Launch the application.
@@ -91,6 +93,13 @@ public class TelaListaPaciente extends JFrame {
 		
 		table = new JTable();
 		scrollPane.setViewportView(table);
+		
+		btnVoltar = new JButton("Voltar");
+		btnVoltar.setForeground(Color.WHITE);
+		btnVoltar.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 11));
+		btnVoltar.setBackground(new Color(64, 128, 128));
+		btnVoltar.setBounds(676, 23, 119, 40);
+		contentPane.add(btnVoltar);
 		
 	}
 }

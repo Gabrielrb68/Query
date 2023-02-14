@@ -58,6 +58,11 @@ public class TelaFichaPaciente extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		JLabel lblNewLabel_8 = new JLabel("");
+		lblNewLabel_8.setBounds(410, -50, 369, 532);
+		lblNewLabel_8.setIcon(new ImageIcon(TelaFichaPaciente.class.getResource("/img/iconmedicina.png")));
+		contentPane.add(lblNewLabel_8);
+		
 		txtNomeDoPaciente = new JTextField();
 		txtNomeDoPaciente.setBounds(10, 11, 306, 36);
 		txtNomeDoPaciente.setForeground(new Color(255, 255, 255));
@@ -81,7 +86,7 @@ public class TelaFichaPaciente extends JFrame {
 		panel_1.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(TelaFichaPaciente.class.getResource("/visao/iconpeople.png")));
+		lblNewLabel.setIcon(new ImageIcon(TelaFichaPaciente.class.getResource("/img/iconpeople.png")));
 		lblNewLabel.setBounds(52, 44, 72, 96);
 		panel_1.add(lblNewLabel);
 		
@@ -145,7 +150,7 @@ public class TelaFichaPaciente extends JFrame {
 		
 		JButton btnNewButton = new JButton("");
 		btnNewButton.setBackground(new Color(240, 240, 240));
-		btnNewButton.setIcon(new ImageIcon(TelaFichaPaciente.class.getResource("/visao/iconCheck.png")));
+		btnNewButton.setIcon(new ImageIcon(TelaFichaPaciente.class.getResource("/img/iconCheck.png")));
 		btnNewButton.setBounds(237, 440, 59, 57);
 		panel.add(btnNewButton);
 		
@@ -171,11 +176,6 @@ public class TelaFichaPaciente extends JFrame {
 		lblNewLabel_5.setBounds(10, 372, 90, 14);
 		panel.add(lblNewLabel_5);
 		
-		JLabel lblNewLabel_8 = new JLabel("");
-		lblNewLabel_8.setBounds(410, -50, 369, 532);
-		lblNewLabel_8.setIcon(new ImageIcon(TelaFichaPaciente.class.getResource("/visao/iconmedicina.png")));
-		contentPane.add(lblNewLabel_8);
-		
 		JLabel lblNewLabel_9 = new JLabel("Registros dos pacientes");
 		lblNewLabel_9.setForeground(new Color(255, 255, 255));
 		lblNewLabel_9.setBounds(453, -9, 270, 72);
@@ -194,5 +194,12 @@ public class TelaFichaPaciente extends JFrame {
 		panel_2.setBackground(new Color(64, 128, 128));
 		panel_2.setBounds(467, -9, 243, 59);
 		contentPane.add(panel_2);
+		
+		JButton btnVoltar = new JButton("Voltar");
+		btnVoltar.setForeground(Color.WHITE);
+		btnVoltar.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 11));
+		btnVoltar.setBackground(new Color(64, 128, 128));
+		btnVoltar.setBounds(703, 479, 119, 40);
+		contentPane.add(btnVoltar);
 	}
 }

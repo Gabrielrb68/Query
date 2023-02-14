@@ -13,6 +13,7 @@ import java.awt.Font;
 import javax.swing.border.CompoundBorder;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 
 public class TelaHistorico extends JFrame {
 
@@ -24,6 +25,7 @@ public class TelaHistorico extends JFrame {
 	private JLabel lblNewLabel_1;
 	private JLabel lblNewLabel_2;
 	private JLabel lblNewLabel_3;
+	private JButton btnVoltar;
 
 	/**
 	 * Launch the application.
@@ -73,7 +75,7 @@ public class TelaHistorico extends JFrame {
 		lblNewLabel_3 = new JLabel("");
 		lblNewLabel_3.setBounds(186, -136, 426, 511);
 		panel.add(lblNewLabel_3);
-		lblNewLabel_3.setIcon(new ImageIcon(TelaHistorico.class.getResource("/visao/iconmedicina.png")));
+		lblNewLabel_3.setIcon(new ImageIcon(TelaHistorico.class.getResource("/img/iconmedicina.png")));
 		
 		lblNewLabel = new JLabel("Setor");
 		lblNewLabel.setFont(new Font("Yu Gothic UI", Font.PLAIN, 20));
@@ -92,6 +94,13 @@ public class TelaHistorico extends JFrame {
 		lblNewLabel_2.setForeground(new Color(255, 255, 255));
 		lblNewLabel_2.setBounds(696, 79, 87, 35);
 		contentPane.add(lblNewLabel_2);
+		
+		btnVoltar = new JButton("Voltar");
+		btnVoltar.setForeground(Color.WHITE);
+		btnVoltar.setFont(new Font("Yu Gothic UI Light", Font.PLAIN, 11));
+		btnVoltar.setBackground(new Color(64, 128, 128));
+		btnVoltar.setBounds(677, 11, 119, 40);
+		contentPane.add(btnVoltar);
 	}
 
 }
