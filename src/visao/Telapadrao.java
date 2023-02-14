@@ -14,7 +14,7 @@ import javax.swing.border.MatteBorder;
 import javax.swing.JTextField;
 
 
-public class Telapadrao extends JFrame {
+public class TelaPadrao extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
@@ -27,7 +27,7 @@ public class Telapadrao extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Telapadrao frame = new Telapadrao();
+					TelaPadrao frame = new TelaPadrao();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -39,11 +39,11 @@ public class Telapadrao extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Telapadrao() {
+	public TelaPadrao() {
 		setForeground(new Color(0, 51, 51));
 		setTitle("Hospital Esmeralda");
 		setBackground(new Color(0, 51, 51));
-		setIconImage(Toolkit.getDefaultToolkit().getImage(Telapadrao.class.getResource("/visao/logoHospital.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(TelaPadrao.class.getResource("/visao/logoHospital.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 863, 569);
 		contentPane = new JPanel();
@@ -104,7 +104,7 @@ public class Telapadrao extends JFrame {
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setBounds(77, 0, 82, 87);
 		panel.add(lblNewLabel);
-		lblNewLabel.setIcon(new ImageIcon(Telapadrao.class.getResource("/visao/simbolomed.png")));
+		lblNewLabel.setIcon(new ImageIcon(TelaPadrao.class.getResource("/visao/simbolomed.png")));
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(new Color(64, 128, 128));
@@ -138,7 +138,7 @@ public class Telapadrao extends JFrame {
 		textField.setColumns(10);
 		
 		JLabel lblNewLabel_3 = new JLabel("");
-		lblNewLabel_3.setIcon(new ImageIcon(Telapadrao.class.getResource("/visao/iconPaciente (4).png")));
+		lblNewLabel_3.setIcon(new ImageIcon(TelaPadrao.class.getResource("/visao/iconPaciente (4).png")));
 		lblNewLabel_3.setBounds(71, 11, 86, 77);
 		panel_2.add(lblNewLabel_3);
 		
@@ -149,7 +149,7 @@ public class Telapadrao extends JFrame {
 		panel_3.setLayout(null);
 		
 		JLabel lblNewLabel_4 = new JLabel("");
-		lblNewLabel_4.setIcon(new ImageIcon(Telapadrao.class.getResource("/visao/iconMedico.png")));
+		lblNewLabel_4.setIcon(new ImageIcon(TelaPadrao.class.getResource("/visao/iconMedico.png")));
 		lblNewLabel_4.setBounds(78, 11, 82, 81);
 		panel_3.add(lblNewLabel_4);
 		

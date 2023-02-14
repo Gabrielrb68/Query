@@ -89,7 +89,7 @@ public class TelaInicial extends JFrame {
 		JLabel lblNewLabel2 = new JLabel("");
 		lblNewLabel2.setBounds(154, 380, 82, 87);
 		panel.add(lblNewLabel2);
-		lblNewLabel2.setIcon(new ImageIcon(Telapadrao.class.getResource("/visao/simbolomed.png")));
+		lblNewLabel2.setIcon(new ImageIcon(TelaPadrao.class.getResource("/visao/simbolomed.png")));
 		
 		
 		JPanel panel_1 = new JPanel();

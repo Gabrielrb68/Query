@@ -14,7 +14,7 @@ import javax.swing.border.CompoundBorder;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 
-public class Telahistorico extends JFrame {
+public class TelaHistorico extends JFrame {
 
 	private JPanel contentPane;
 	private JScrollPane scrollPane;
@@ -32,7 +32,7 @@ public class Telahistorico extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Telahistorico frame = new Telahistorico();
+					TelaHistorico frame = new TelaHistorico();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -44,10 +44,10 @@ public class Telahistorico extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Telahistorico() {
+	public TelaHistorico() {
 		setBackground(new Color(0, 81, 81));
 		setTitle("Hospital Esmeralda");
-		setIconImage(Toolkit.getDefaultToolkit().getImage(Telahistorico.class.getResource("/visao/logoHospital.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(TelaHistorico.class.getResource("/visao/logoHospital.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 863, 569);
 		contentPane = new JPanel();
@@ -73,7 +73,7 @@ public class Telahistorico extends JFrame {
 		lblNewLabel_3 = new JLabel("");
 		lblNewLabel_3.setBounds(186, -136, 426, 511);
 		panel.add(lblNewLabel_3);
-		lblNewLabel_3.setIcon(new ImageIcon(Telahistorico.class.getResource("/visao/iconmedicina.png")));
+		lblNewLabel_3.setIcon(new ImageIcon(TelaHistorico.class.getResource("/visao/iconmedicina.png")));
 		
 		lblNewLabel = new JLabel("Setor");
 		lblNewLabel.setFont(new Font("Yu Gothic UI", Font.PLAIN, 20));
