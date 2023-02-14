@@ -15,7 +15,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.SystemColor;
 
-public class Telafichapaciente extends JFrame {
+public class TelaFichaPaciente extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField txtNomeDoPaciente;
@@ -34,7 +34,7 @@ public class Telafichapaciente extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Telafichapaciente frame = new Telafichapaciente();
+					TelaFichaPaciente frame = new TelaFichaPaciente();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -46,9 +46,9 @@ public class Telafichapaciente extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Telafichapaciente() {
+	public TelaFichaPaciente() {
 		setTitle("Hospital Esmeralda");
-		setIconImage(Toolkit.getDefaultToolkit().getImage(Telafichapaciente.class.getResource("/visao/logoHospital.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(TelaFichaPaciente.class.getResource("/visao/logoHospital.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 863, 569);
 		contentPane = new JPanel();
@@ -81,7 +81,7 @@ public class Telafichapaciente extends JFrame {
 		panel_1.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(Telafichapaciente.class.getResource("/visao/iconpeople.png")));
+		lblNewLabel.setIcon(new ImageIcon(TelaFichaPaciente.class.getResource("/visao/iconpeople.png")));
 		lblNewLabel.setBounds(52, 44, 72, 96);
 		panel_1.add(lblNewLabel);
 		
@@ -145,7 +145,7 @@ public class Telafichapaciente extends JFrame {
 		
 		JButton btnNewButton = new JButton("");
 		btnNewButton.setBackground(new Color(240, 240, 240));
-		btnNewButton.setIcon(new ImageIcon(Telafichapaciente.class.getResource("/visao/iconCheck.png")));
+		btnNewButton.setIcon(new ImageIcon(TelaFichaPaciente.class.getResource("/visao/iconCheck.png")));
 		btnNewButton.setBounds(237, 440, 59, 57);
 		panel.add(btnNewButton);
 		
@@ -173,7 +173,7 @@ public class Telafichapaciente extends JFrame {
 		
 		JLabel lblNewLabel_8 = new JLabel("");
 		lblNewLabel_8.setBounds(410, -50, 369, 532);
-		lblNewLabel_8.setIcon(new ImageIcon(Telafichapaciente.class.getResource("/visao/iconmedicina.png")));
+		lblNewLabel_8.setIcon(new ImageIcon(TelaFichaPaciente.class.getResource("/visao/iconmedicina.png")));
 		contentPane.add(lblNewLabel_8);
 		
 		JLabel lblNewLabel_9 = new JLabel("Registros dos pacientes");
